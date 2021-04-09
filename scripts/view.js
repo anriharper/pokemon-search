@@ -1,7 +1,8 @@
 import HUD from './components/HUD.js';
 import Random from './components/Random.js';
 import Search from './components/Search.js';
-//import Request from './components/Request.js';
+import Github from './components/Github.js';
+
 
 const renderDOM = (html) => document.getElementById('view').innerHTML = html;
 
@@ -22,6 +23,8 @@ export const StartMenu = (props) => {
         <p class='center pokeFont'> Due to limitations of the API's resources, only Dex ID 1-649 sprites are available (all of Generation I through V). </p>
         <br>
         ${Search()}
-        ${Random()}`
+        ${Random()}
+        <br><br><hr><br><br>
+        ${Github()}`
     )
 }
